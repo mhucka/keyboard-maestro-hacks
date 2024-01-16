@@ -1,0 +1,39 @@
+name: "Bad Link Reporter"
+
+# Configure this section ─────────────────────────────────────────────
+
+env:
+  # Files examined by the workflow:
+  files: '*.md'
+
+  # Label assigned to issues created by this workflow:
+  labels: 'bug'
+
+  # Optional file containing a list of URLs to ignore, one per line:
+  ignore: '.github/workflows/ignored-urls.txt'
+
+on:
+  schedule:
+    # Syntax is: "minute  hour  day-of-month  month  day-of-week"
+    - cron: "00 04 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/bad-link-reporter.yml
+      - .github/workflows/ignored-urls.txt
+  workflow_dispatch:
+
+# The rest of this file should be left as-is ─────────────────────────
+
+run-name: Test links in files
+jobs:
+  run-baler:
+    name: Run Bad Link Reporter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: caltechlibrary/baler@main
+        with:
+          files:  ${{github.event.inputs.files  || env.files}}
+          labels: ${{github.event.inputs.labels || env.labels}}
+          ignore: ${{github.event.inputs.ignore || env.ignore}}

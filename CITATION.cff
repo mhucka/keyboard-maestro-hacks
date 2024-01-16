@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+authors:
+  - family-names: Hucka
+    given-names: Michael
+    email: mhucka@caltech.edu
+    orcid: https://orcid.org/0000-0001-9105-5960
+title: Mike's Software Repository Template
+abstract: My repository template for software projects on GitHub
+version: 1.7.0
+date-released: 2024-01-16
+repository-code: "https://github.com/mhucka/template"
+license: MIT
+type: software
+keywords:
+  - template
+  - software
