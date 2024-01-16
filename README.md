@@ -1,58 +1,39 @@
-# Template for my software READMEs
+# Mike's Keyboard Maestro hacks
 
-This is a template README file for my software repositories.  This first paragraph of the README will summarize the software in a concise fashion, preferably using no more than one or two sentences.
+Various bits and bobs related to my use of [Keyboard Maestro](https://www.keyboardmaestro.com/main/).
 
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/template/blob/main/LICENSE)
-[![Latest release](https://img.shields.io/github/v/release/mhucka/template.svg?style=flat-square&color=b44e88&label=Latest%20release)](https://github.com/mhucka/template/releases)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/keyboard-maestro-hacks/blob/main/LICENSE)
 
 
 ## Table of contents
 
 * [Introduction](#introduction)
-* [Installation](#installation)
-* [Usage](#usage)
 * [Known issues and limitations](#known-issues-and-limitations)
 * [Getting help](#getting-help)
 * [Contributing](#contributing)
 * [License](#license)
-* [Acknowledgments](#acknowledgments)
 
 
 ## Introduction
 
-[... fill in ...]
-
-
-## Installation
-
-[... fill in ...]
-
-
-## Usage
-
-[... fill in ...]
+This is a collection of short scripts and other things that I use with [Keyboard Maestro](https://www.keyboardmaestro.com/main/) on macOS. You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under an MIT license.
 
 
 ## Known issues and limitations
 
-[... fill in ...]
+These are not polished programs. They may be buggy. They may be out of date. I might not even use them anymore.
 
 
 ## Getting help
 
-If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/mhucka/template/issues) for this repository.
+If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/mhucka/keyboard-maestro-hacks/issues) for this repository.
 
 
 ## Contributing
 
-Your help and participation in enhancing this software is welcome!  Please visit the [guidelines for contributing](https://github.com/mhucka/template/blob/main/CONTRIBUTING.md) for some tips on getting started.
+Your help and participation in enhancing this software is welcome!  Please visit the [guidelines for contributing](https://github.com/mhucka/keyboard-maestro-hacks/blob/main/CONTRIBUTING.md) for some tips on getting started.
 
 
 ## License
 
 This software is Copyright © 2024 by Michael Hucka.  This software is freely distributed under the terms of the MIT License.  Please see the [LICENSE](LICENSE) file for more information.
-
-
-## Acknowledgments
-
-[... fill in ...]

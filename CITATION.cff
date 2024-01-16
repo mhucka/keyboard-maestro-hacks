@@ -5,13 +5,14 @@ authors:
     given-names: Michael
     email: mhucka@caltech.edu
     orcid: https://orcid.org/0000-0001-9105-5960
-title: Mike's Software Repository Template
-abstract: My repository template for software projects on GitHub
-version: 1.7.0
+title: Mike's Keyboard Maestro hacks
+abstract: Miscellaneous things related to my use of Keyboard Maestro
 date-released: 2024-01-16
-repository-code: "https://github.com/mhucka/template"
+repository-code: "https://github.com/mhucka/keyboard-maestro-hacks"
 license: MIT
 type: software
 keywords:
-  - template
   - software
+  - macOS
+  - AppleScript
+  - Keyboard Maestro
