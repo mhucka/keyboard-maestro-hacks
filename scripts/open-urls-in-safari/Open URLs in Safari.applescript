@@ -31,9 +31,6 @@ tell application "System Events"
 	key code 8 using command down
 	-- I get erratic clipboard contents without this delay.
 	delay 0.25
-end tell
-
-tell application "System Events"
 	set candidates to paragraphs of (the clipboard as text)
 	repeat with i from 1 to count of candidates
 		set candidates's item i to (text of candidates's item i)'s text
