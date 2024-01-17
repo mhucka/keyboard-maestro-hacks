@@ -25,8 +25,6 @@ end openInSafari
 -- Main body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 tell application "System Events"
-	set front_app to name of first application process whose frontmost is true
-	delay 0.25
 	key code 8 using command down
 	delay 0.25
 end tell
