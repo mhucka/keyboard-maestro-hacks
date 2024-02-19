@@ -3,6 +3,7 @@
 Various bits and bobs related to my use of [Keyboard Maestro](https://www.keyboardmaestro.com/main/).
 
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/keyboard-maestro-hacks/blob/main/LICENSE)
+[![AppleScript](https://img.shields.io/badge/AppleScript-green.svg?style=flat-square)](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html)
 
 
 ## Table of contents
@@ -16,7 +17,7 @@ Various bits and bobs related to my use of [Keyboard Maestro](https://www.keyboa
 
 ## Introduction
 
-This is a collection of short scripts and other things that I use with [Keyboard Maestro](https://www.keyboardmaestro.com/main/) on macOS. You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under an MIT license.
+This is a collection of short scripts and other things that I use with [Keyboard Maestro](https://www.keyboardmaestro.com/main/) on macOS. You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please let me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under an MIT license.
 
 
 ## Known issues and limitations
