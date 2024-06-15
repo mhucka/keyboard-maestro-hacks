@@ -1,13 +1,14 @@
--- Summary: open all selected URLs in a new window in Safari
+-- Summary: open all selected URLs in a new window in Safari.
 --
 -- Copyright 2024 Michael Hucka.
 -- License: MIT License – see file "LICENSE" in the project website.
 -- Website: https://github.com/mhucka/Keyboard-maestro-hacks
 
-use AppleScript version "2.4" -- Yosemite (10.10) or later
+use framework "Foundation"
 use scripting additions
 
--- Helper functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-- Helper functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 on openInSafari(urls)
 	tell application "Safari"
@@ -22,7 +23,16 @@ on openInSafari(urls)
 	end tell
 end openInSafari
 
--- Main body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+on isURL(str)
+	set ca to a reference to current application
+	set parsed_url to ca's NSURLComponents's componentsWithString:(str)
+	return (parsed_url ≠ missing value ¬
+		and parsed_url's |scheme|() ≠ missing value ¬
+		and parsed_url's |host|() ≠ missing value)
+end isURL
+
+
+-- Main body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 tell application "System Events"
 	-- The lack of a universal way to tell any application to copy
@@ -41,7 +51,7 @@ tell application "System Events"
 	end if
 	set urls to {}
 	repeat with _item in candidates
-		if (_item starts with "http:" or _item starts with "https:") then
+		if my isURL(_item) then
 			set end of urls to _item
 		end if
 	end repeat
